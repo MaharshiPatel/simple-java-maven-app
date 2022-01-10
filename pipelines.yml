@@ -27,7 +27,6 @@ pipelines:
           deployerSnapshotRepo: su201-libs-snapshot
           deployerReleaseRepo:  su201-libs-release
           sourceLocation: ./
-          mvnCommand: clean install
           inputResources:
             - name: git_simple_maven_app_repo
           integrations:
@@ -36,7 +35,7 @@ pipelines:
       - name: publish_build
         type: PublishBuildInfo
         configuration:
-          forceXrayScan: true              # optional
+          forceXrayScan: false              # optional
           failOnScan: false                 # default true
           inputSteps:
             - name: mvn_build_step
