@@ -20,6 +20,10 @@ resources:
 
 pipelines:
   - name: simple_mvn_app_pipeline
+    configuration:
+      environmentVariables:
+        readOnly:
+          M2_HOME: /usr/local/apache-maven-3.6.3/
     steps:
       - name: mvn_build_step
         type: MvnBuild
