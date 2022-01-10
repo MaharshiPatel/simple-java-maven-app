@@ -41,4 +41,4 @@ pipelines:
           inputSteps:
             - name: mvn_build_step
           outputResources:
-            - name: mvn_build_info
+            - name: simple_mvn_app_build_info
