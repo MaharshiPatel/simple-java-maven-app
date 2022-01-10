@@ -39,7 +39,7 @@ pipelines:
       - name: publish_build
         type: PublishBuildInfo
         configuration:
-          forceXrayScan: false              # optional
+          forceXrayScan: true              # optional
           failOnScan: false                 # default true
           inputSteps:
             - name: mvn_build_step
