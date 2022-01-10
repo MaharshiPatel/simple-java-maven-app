@@ -10,7 +10,7 @@ resources:
         # Specifies which branches will trigger dependent steps
         include: main
 
-  - name: mvn_build_info
+  - name: simple_mvn_app_build_info
     type: BuildInfo
     configuration:
       sourceArtifactory: Artifactory
