@@ -1,5 +1,5 @@
 resources:
-  - name: git_repo
+  - name: git_simple_maven_app_repo
     type: GitRepo
     configuration:
       # SCM integration where the repository is located
@@ -29,7 +29,7 @@ pipelines:
           sourceLocation: ./
           mvnCommand: clean install
           inputResources:
-            - name: git_repo
+            - name: git_simple_maven_app_repo
           integrations:
             - name: Artifactory
 
