@@ -19,7 +19,7 @@ resources:
       externalCI: Artifactory
 
 pipelines:
-  - name: mvn_example_pipeline
+  - name: simple_mvn_app_pipeline
     steps:
       - name: mvn_build_step
         type: MvnBuild
